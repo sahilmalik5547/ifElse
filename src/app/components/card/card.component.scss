@@ -1,0 +1,62 @@
+@import "./../../../color.scss";
+
+.card {
+  background-color: $white;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  width: 16rem;
+  height: inherit;
+  box-shadow: 0 2px 4px $lightgrey;
+
+  :hover {
+    background-color: $blue;
+    border-radius: 5px;
+    .card-value {
+      color: $white;
+    }
+    .card-icon i{
+      color: $white;
+      background-color: $grey;
+    }
+  }
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 25px;
+  }
+  .card-menu {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    i {
+      float: right;
+      color: $grey;
+    }
+  }
+  .card-icon {
+    font-size: 32px;
+    color: $blue;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    i {
+      padding: 15px;
+      background-color: $lightgrey;
+      border-radius: 50%;
+    }
+  }
+  .card-title {
+    margin: 0;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: $grey;
+  }
+
+  .card-value {
+    margin-right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+}

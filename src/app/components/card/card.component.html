@@ -1,0 +1,17 @@
+<div class="card">
+  <!-- card Body -->
+  <div class="card-body">
+    <!-- card Header -->
+      <div class="card-menu">
+        <i class="fas fa-ellipsis-v"></i>
+    </div>
+    <!-- icon -->
+    <div class="card-icon">
+      <i [class]="cardDetail.faIcon"></i>
+    </div>
+    <!-- title -->
+    <h2 class="card-title">{{cardDetail.title}}</h2>
+    <!-- value -->
+    <div class="card-value">{{cardDetail.value | currency}}</div>
+  </div>
+</div>

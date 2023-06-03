@@ -1,0 +1,36 @@
+@import "./../../../color.scss";
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: $grey;
+  th,
+  td {
+    padding: 8px;
+    border-bottom: 1px solid $midgrey;
+  }
+
+  th {
+    font-weight: bold;
+  }
+}
+.table-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+}
+.pink{
+    color:$pink;
+}
+.green{
+    color:$green;
+}
+
+.heading{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  p{
+    color:$grey;
+  }
+}

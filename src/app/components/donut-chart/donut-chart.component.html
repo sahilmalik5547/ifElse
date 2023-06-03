@@ -1,0 +1,15 @@
+<div>
+    <div  class="heading">
+        <h2>All Expenses</h2>
+        <p>Monthly <i class="fas fa-angle-down"></i></p>
+    </div>
+    <div>
+        <div id="chartdiv" class="chart"></div>
+    </div>
+    <div class="outcome">
+        <div *ngFor="let item of outcome">
+            <h4>{{item.title}}</h4>
+            <h3>{{item.value | currency}}</h3>
+        </div>
+    </div>
+</div>

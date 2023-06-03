@@ -1,0 +1,29 @@
+<div>
+</div>
+<div class="dashboard">
+    <div class="content">
+      <div class="cards">
+        <app-card *ngFor=" let card of cards" class="card" [details]="card"></app-card>
+      </div>
+      
+      <div class="charts">
+        <div class="chart areaChart">
+          <!-- Chart 1 content -->
+          <app-area-fill-chart></app-area-fill-chart>
+        </div>
+        <div class="chart donutChart">
+          <!-- Chart 2 content -->
+          <app-donut-chart>  </app-donut-chart>
+        </div>
+      </div>
+      
+      <div class="table-container">
+      <app-table [transactions]="transactions$"></app-table>
+      </div>
+    </div>
+  
+    <div class="right-sidebar">
+<app-right-sidebar [balance]="cards[0].value"></app-right-sidebar>
+    </div>
+  </div>
+  

@@ -1,0 +1,52 @@
+@import "./../../../color.scss";
+.dashboard {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  background-color: $lightgrey;
+  padding: 20px;
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .charts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .chart {
+      background-color: $white;
+      border-radius: 4px;
+      padding: 5px;
+      margin: 5px;
+    }
+    .areaChart {
+      width: 65%;
+    }
+    .donutChart {
+      width: 35%;
+    }
+  }
+
+  .table-container {
+    background-color: $white;
+    border-radius: 4px;
+    padding: 10px;
+    overflow-x: auto;
+  }
+}
+
+.right-sidebar {
+  width: 300px;
+  background-color: $lightgrey;
+  padding: 20px 20px 20px 0px;
+}

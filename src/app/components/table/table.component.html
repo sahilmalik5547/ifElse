@@ -1,0 +1,18 @@
+<div class="heading">
+  <h2>Transactions</h2>
+  <p>Recent <i class="fas fa-angle-down"></i></p>
+</div>
+<table>
+    <tbody>
+      <tr *ngFor="let row of data |async">
+        <td><img src="./../../../assets/image2.jpg" alt="Photo" class="table-img"></td>
+        <td>{{row.name | titlecase}}</td>
+        <td>{{row.company | titlecase}}</td>
+        <td>{{row.registered | date:'shortDate'}}</td>
+        <td>{{row.registered | date :'shortTime'}}</td>
+        <td>{{row.amount | currency}}</td>
+        <td [ngClass]="row.status==='completed' ? 'green' : 'pink'">{{row.status | titlecase}}</td>
+        <td><i class="fas fa-angle-down"></i></td>
+      </tr>
+    </tbody>
+  </table>
